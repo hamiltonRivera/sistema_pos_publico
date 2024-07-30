@@ -75,6 +75,11 @@
                                     <i class="fa-solid fa-right-to-bracket"></i> Historial de sesiones
                                 </a>
                             </li>
+                            <li>
+                                <a href="{{ route('best_selling_products') }}" class="mega-menu-ul-li-a">
+                                    <i class="fas fa-certificate"></i> Productos más vendidos
+                                </a>
+                            </li>
 
                         </ul>
                     </div>

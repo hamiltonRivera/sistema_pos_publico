@@ -169,4 +169,9 @@ class AdminController extends Controller
     {
         return view('administrative.admin.incomes-outcomes');
     }
+
+    public function best_selling_products()
+    {
+        return view('administrative.admin.best_selling_products');
+    }
 }

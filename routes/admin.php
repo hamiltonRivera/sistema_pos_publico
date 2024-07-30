@@ -23,5 +23,6 @@ Route::controller(AdminController::class)->group(function(){
         Route::get('categoryExport', 'categoryExport')->name('categoryExport');
         Route::get('voucherHistory', 'voucherHistory')->name('voucherHistory');
         Route::get('incomesOutcomes', 'incomesOutcomes')->name('incomesOutcomes');
+        Route::get('best_selling_products', 'best_selling_products')->name('best_selling_products');
   });
 });
