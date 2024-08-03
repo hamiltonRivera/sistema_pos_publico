@@ -2,6 +2,7 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "start": "sleep 3",
         "dev": "vite",
         "build": "vite build"
     },
