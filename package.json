@@ -4,7 +4,8 @@
     "scripts": {
         "start": "sleep 3",
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "build:css": "tailwindcss build -i resources/css/app.css -o public/build/tailwind_build_styles.css"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.7",
