@@ -40,5 +40,30 @@ class RolePermissionSeeder extends Seeder
                 'password' =>bcrypt('admin')
             ]
         )->assignRole('Desarrollador');
+
+
+        User::create(
+            [
+                'name' => 'German',
+                'email' => 'germandelgadillo35@gmail.com',
+                'password' =>bcrypt('admin')
+            ]
+        )->assignRole('Desarrollador');
+
+        User::create(
+            [
+                'name' => 'Gorge',
+                'email' => 'glmolinares@gmail.com',
+                'password' =>bcrypt('admin')
+            ]
+        )->assignRole('Desarrollador');
+        
+        User::create(
+            [
+                'name' => 'Josj',
+                'email' => 'jaltomisraunoe211003@gmail.com',
+                'password' =>bcrypt('admin')
+            ]
+        )->assignRole('Desarrollador');
     }
 }
