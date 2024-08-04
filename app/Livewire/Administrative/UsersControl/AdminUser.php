@@ -34,10 +34,10 @@ class AdminUser extends Component
                 'password' => bcrypt('Sistema123@'),  // Contraseña genérica
             ]);
 
-            // Obtener el rol "Docente" usando el nombre del rol
+            // Obtener el rol "admin" usando el nombre del rol
             $Role = Role::where('name', 'Administrador')->first();
 
-            // Asignar el rol de docente al usuario
+            // Asignar el rol de admin al usuario
             $user->assignRole($Role);
 
             $newActivitie = new ActivityLog();

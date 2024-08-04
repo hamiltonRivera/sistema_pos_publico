@@ -34,10 +34,10 @@ class CashierUser extends Component
                 'password' => bcrypt('Sistema123@'),  // Contraseña genérica
             ]);
 
-            // Obtener el rol "Docente" usando el nombre del rol
+            // Obtener el rol "caja" usando el nombre del rol
             $Role = Role::where('name', 'Caja')->first();
 
-            // Asignar el rol de docente al usuario
+            // Asignar el rol de caja al usuario
             $user->assignRole($Role);
 
             $newActivitie = new ActivityLog();
