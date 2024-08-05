@@ -20,6 +20,8 @@ class Products extends Component
     public $descripcion,$stock,$fecha_vencimiento,$precio_compra,$precio_venta_unidad, $precio_venta_mayor,
     $category_id, $codigo, $selected_id, $carga;
 
+    public $name;
+
     public function render()
     {
         $categories = Category::where('name', 'like', '%' . $this->search_category . '%')->get();

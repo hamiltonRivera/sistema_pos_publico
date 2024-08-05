@@ -41,8 +41,7 @@ class Orders extends Component
          ->where('nombreApellido', 'like', '%' . $this->search_provider . '%')->get();
 
          $products = Product::orderBy('id', 'asc')
-          ->where('description', 'like', '%' .$this->search_product . '%')
-          ->orWhere('codigo', 'like', '%' . $this->search_product . '%')->get();
+         ->whereAny(['descripcion', 'codigo'], 'like', '%' . $this->search_product . '%')->get();
 
         return view('livewire.administrative.orders.orders', compact('providers', 'products'));
     }

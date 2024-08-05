@@ -5,9 +5,9 @@
         <thead class="table-thead">
             <tr>
                 <th scope="col" class="px-6 py-3">#</th>
-                <th scope="col" class="px-6 py-3">Usuario</th>
-                <th scope="col" class="px-6 py-3">Actividad</th>
-                <th scope="col" class="px-6 py-3">Detalle</th>
+                <th scope="col" class="px-6 py-3"><i class="fa-solid fa-user"></i> Usuario</th>
+                <th scope="col" class="px-6 py-3"><i class="fa-solid fa-note-sticky"></i> Actividad</th>
+                <th scope="col" class="px-6 py-3"><i class="fa-solid fa-note-sticky"></i> Detalle</th>
                 <th scope="col" class="px-6 py-3">Fecha</th>
 
             </tr>

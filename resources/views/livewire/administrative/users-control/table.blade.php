@@ -6,11 +6,11 @@
             <thead class="order-b bg-blue-600 text-white">
                <tr class="text-cente">
                 <th scope="col" class="tr-th">#</th>
-                <th scope="col" class="px-6 py-3">Nombre</th>
-                <th scope="col" class="px-6 py-3">Correo</th>
-                <th scope="col" class="px-6 py-3">Rol Actual</th>
-                <th scope="col" class="px-6 py-3">Roles</th>
-                <th scope="col" class="px-6 py-3">Opciones</th>
+                <th scope="col" class="px-6 py-3"><i class="fa-solid fa-user"></i> Nombre</th>
+                <th scope="col" class="px-6 py-3"><i class="fa-solid fa-envelope"></i> Correo</th>
+                <th scope="col" class="px-6 py-3"><i class="fa-solid fa-check-double"></i> Rol Actual</th>
+                <th scope="col" class="px-6 py-3"><i class="fa-solid fa-list"></i> Roles</th>
+                <th scope="col" class="px-6 py-3"><i class="fa-solid fa-pencil"></i> Opciones</th>
                </tr>
             </thead>
 
