@@ -12,3 +12,8 @@
   <div>
     @include('livewire.daily-process.products.form.unid_purchases_price')
   </div>
+
+  <div>
+    @include('livewire.daily-process.products.form.category_modal')
+  </div>
+

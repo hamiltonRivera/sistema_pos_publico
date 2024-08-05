@@ -160,7 +160,17 @@ class Products extends Component
       $this->refresh();
     }
 
-
-
-
+    public function categoryStore()
+    {
+        $this->validate([
+            'name' => 'required|string|unique:categories,name,except,id'
+        ]);
+        
+        $newCategory = new Category();
+        $newCategory->name = ucfirst(strtolower($this->name));
+        $newCategory->save();
+        Alert::success('Categoria', 'Categoria registrada exitosamente');
+        $this->refresh();
+    }
+    
 }
