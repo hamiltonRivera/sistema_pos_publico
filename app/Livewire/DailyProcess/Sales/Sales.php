@@ -238,7 +238,9 @@ class Sales extends Component
             $this->cambio = 0;
         }
     }
-
+     
+    //esta funcion hace que calcule el cambio 
+    //la tuve que agregar porque en livewire 2 no la necesitaba, en livewire 3 si 
     public function updated($field)
     {
         if($field === 'totalRecibido' || $field === 'totalPagadoDescuento' || $field === 'totalPagado')
@@ -267,7 +269,12 @@ class Sales extends Component
 
     //funcion para agregar el producto al carrito
     public function addItem($array)
-    {
+    {   
+        if($this->productSel == null)
+        {
+            session()->flash('addItem', '*Campos Vacíos. Agrega un producto primero.');
+            return false;
+        }
         //valida que si el producto seleccionado se encuera sin stock, lo quita de la cesta
         if ($this->productSel->stock == 0) {
             return false;
